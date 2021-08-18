@@ -749,31 +749,3 @@ if __name__ == '__main__':
     bot_polling.start()
 
 
-""" TODO
-1. Bir martalik xabarnoma qo'shish, imkoniyatini qo'shish kerak.
-2))))). "Monday kuni belgilandi" english + o'zbekchami bu? Hafta kunlarini ham o'zbekcha
-chiqarish kerak.
-3.))) Har hafta tugmasini bosgandan so'ng, ortga tugmasini bossa,
-bir qadam ortga qaytish kerak, 2 qadam emas!
-4.))))) Eski datalar yangilari uchun ham aralashib ketvotti(hafta kunlarini ko'rishda),
-bitta guruhga 3-4ta rejalashtirilgan xabar qo'yilgan bo'lsa(hafta kunida) 
-eskilarini hafta kunini ham chiqarib bervotti, oyda bir martalik xabar uchun ham 
-oldingilarini hisoblab ortig'i bilan xabarlar yozilyabdi.
-5.)))))) Boshlab qo'yib tugatmasdan qaytib ketsa boshlangan qadamlarni ham saqlab qo'yvotti,
-6.)))) Bo'sh datalar ham bazaga saqlanibdi, 
-7.))))) Delete itemlarni ko'rishda error bor, 
-------
-  File "bot.py", line 463, in any_message
-    button = types.InlineKeyboardButton(i.group_name + "kanal(guruh)da "+i.time+" da",callback_data="del"+str(i.id))
-  TypeError: Can't convert 'NoneType' object to str implicitly
------- delete ichidagi item bo'sh kelgan qaysi biridir.
-8. Har oyning 31 sanasida avto xabar belgilasa bo'ladimi? 
-Yo'q, nega? sababi har oyda ham 31 kun mavjud emas. bu holatlar o'ylanmagan.
-9.)))) Vaqtni kiritishda orqaga qaytish tugmasi ishlamayabdi. Event handler qo'yish kerak tugmaga.
-10.))))) "Har oyda" tugmasini bosgandan keyn int kutvotti boshqa narsa jo`natvorsa bot uxladi :). 
-))try except va orqaga tugmasini qo'yish kerak.
-11.))))) Aniq vaqtda xabar jo'natilmayabdi, sekundlarda kechikish bor,
-sababi every(1).minute qo`yilgan bu misol uchun 11:11:34 da hisoblashni boshlasa,
-keyingi minutda ham 34s o`tib run bo`ladi shuni hisobiga 34 sekun kechikish bo`votti.
-12.)) Kanal uchun deyarli tekshirmadim, to'liq tekshirib chiqing. 2ta kanal uchun 2ta odam uchun va hk.
-"""
